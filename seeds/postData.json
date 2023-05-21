@@ -1,0 +1,19 @@
+[
+    {
+        "title": "I am a title for post",
+        "body": "I am the body for a post"
+    },
+    {
+        "title": "Another title for post",
+        "body": "Another body for post"
+    },
+    {
+        "title": "Additional title for additional post",
+        "body": "Additional body for additional post"
+    },
+    {
+        "title": "One of many titles for post",
+        "body": "One of many bodies for post"
+    }
+
+]
