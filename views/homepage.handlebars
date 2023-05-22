@@ -1,7 +1,7 @@
 
 
 
-    <div class="nav">
+    {{!-- <div class="nav">
         <a href='/'>Home Page</a>
         {{#if logged_in}}
         <a href='/dashboard'>Dashboard!</a>
@@ -9,11 +9,11 @@
         {{#unless logged_in}}
         <a href="/login">Dashboard!</a>
         <a href="/login">Please log in</a>
-    </div>
+    </div> --}}
 
         {{#each posts as |post|}}
-        <article class="card">
-            <div class="card-header flex-row justify-space-between">
+        <article class="row-mb-6">
+            <div class="col-md-7">
                 <h2>
                     <a href="/post/{{post.id}}">{{post.title}}</a>
                 </h2>
@@ -21,10 +21,9 @@
                     Posted by {{post.user.username}} on {{format_date createdAt}}
                 </div>
             </div>
-            <div class="card-body">
+            <div class="col-sm-4">
                 {{body}}
             </div>
         </article>
         {{/each}}
-    </div>
 
