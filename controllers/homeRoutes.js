@@ -7,7 +7,11 @@ router.get('/', async (req, res) => {
     // Get all posts and JOIN with user data
     const postData = await Post.findAll({
       include: [
-        User
+        User,
+        {
+          model: Comment,
+          include: [User],
+        }
 
       ],
     });
@@ -19,7 +23,7 @@ router.get('/', async (req, res) => {
     res.render('homepage', { 
       posts, 
       logged_in: req.session.logged_in ,
-      page_title: "Welcome the tech-blog!"
+      page_title: "Welcome to the tech-blog!"
     });
   } catch (err) {
     res.status(500).json(err);

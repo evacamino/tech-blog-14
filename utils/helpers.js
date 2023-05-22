@@ -1,17 +1,17 @@
-const weekday = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const month = [
- 'Jan',
- 'Feb',
- 'Mar',
- 'Apr',
+ 'January',
+ 'Feburuary',
+ 'March',
+ 'April',
  'May',
- 'Jun',
- 'Jul',
- 'Aug',
- 'Sep',
- 'Oct',
- 'Nov',
- 'Dec',
+ 'June',
+ 'July',
+ 'August',
+ 'September',
+ 'October',
+ 'November',
+ 'December',
 ];
 
 module.exports = {
