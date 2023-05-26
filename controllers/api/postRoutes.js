@@ -14,5 +14,15 @@ router.post('/', withAuth, async (req, res) => {
       res.status(400).json(err);
     }
   });
+  router.delete('/:id', withAuth, async (req, res) => {
+    try {
+      const delPost = await Post.destroy({ where: { username: req.params.id }
+      });
+  
+      res.status(200).json(delPost);
+    } catch (err) {
+      res.status(400).json(err);
+    }
+  });
   
 module.exports = router;
